@@ -1,0 +1,7 @@
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+tabulate>=0.9
+transformers>=4.45
+accelerate>=0.34
+anthropic>=0.40
