@@ -1,0 +1,47 @@
+name: Evaluate agents
+
+# Runs the 30-task suite against open-weights models on CPU (and Claude if ANTHROPIC_API_KEY is set
+# as a repository secret), then commits the results.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/evaluate.yml", "src/agentkit/agent.py", "src/agentkit/tasks.py"]
+
+permissions:
+  contents: write
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install (CPU-only PyTorch)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt && pip install -e .
+      - name: Evaluate open models
+        run: |
+          mkdir -p reports
+          set -o pipefail
+          python -u -m agentkit.harness 2>&1 | tee reports/run_log.txt
+      - name: Evaluate Claude (optional)
+        if: env.ANTHROPIC_API_KEY != ''
+        run: python -u -m agentkit.harness --backend anthropic --out reports/claude 2>&1 | tee reports/claude_run_log.txt
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports
+          git diff --cached --quiet && exit 0
+          git commit -m "Evaluation results [skip ci]"
+          git pull --rebase origin main
+          git push
