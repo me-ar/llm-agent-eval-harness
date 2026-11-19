@@ -1,0 +1,91 @@
+config,task,category,correct,steps,tool_calls,invalid_replies,tool_errors,seconds,failure
+Qwen2.5-1.5B - direct (no tools),arit-01,arithmetic,False,1,0,0,0,7.7,answered without tools
+Qwen2.5-1.5B - direct (no tools),arit-02,arithmetic,False,1,0,0,0,6.9,answered without tools
+Qwen2.5-1.5B - direct (no tools),arit-03,arithmetic,False,1,0,0,0,7.34,answered without tools
+Qwen2.5-1.5B - direct (no tools),arit-04,arithmetic,True,1,0,0,0,5.86,correct
+Qwen2.5-1.5B - direct (no tools),arit-05,arithmetic,False,1,0,0,0,7.81,answered without tools
+Qwen2.5-1.5B - direct (no tools),arit-06,arithmetic,False,1,0,0,0,9.54,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-01,sql,False,1,0,0,0,7.87,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-02,sql,False,1,0,0,0,8.93,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-03,sql,False,1,0,0,0,6.98,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-04,sql,False,1,0,0,0,7.3,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-05,sql,False,1,0,0,0,9.26,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-06,sql,False,1,0,0,0,7.2,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-07,sql,False,1,0,0,0,11.07,answered without tools
+Qwen2.5-1.5B - direct (no tools),sql-08,sql,False,1,0,0,0,7.21,answered without tools
+Qwen2.5-1.5B - direct (no tools),unit-01,units,False,1,0,0,0,6.8,answered without tools
+Qwen2.5-1.5B - direct (no tools),unit-02,units,False,1,0,0,0,6.15,answered without tools
+Qwen2.5-1.5B - direct (no tools),unit-03,units,False,1,0,0,0,6.56,answered without tools
+Qwen2.5-1.5B - direct (no tools),unit-04,units,False,1,0,0,0,5.39,answered without tools
+Qwen2.5-1.5B - direct (no tools),unit-05,units,False,1,0,0,0,6.63,answered without tools
+Qwen2.5-1.5B - direct (no tools),unit-06,units,False,1,0,0,0,6.32,answered without tools
+Qwen2.5-1.5B - direct (no tools),poli-01,policy,False,1,0,0,0,3.52,answered without tools
+Qwen2.5-1.5B - direct (no tools),poli-02,policy,False,1,0,0,0,14.43,answered without tools
+Qwen2.5-1.5B - direct (no tools),poli-03,policy,False,1,0,0,0,6.15,answered without tools
+Qwen2.5-1.5B - direct (no tools),poli-04,policy,False,1,0,0,0,10.59,answered without tools
+Qwen2.5-1.5B - direct (no tools),poli-05,policy,True,1,0,0,0,6.61,correct
+Qwen2.5-1.5B - direct (no tools),mult-01,multi_tool,False,1,0,0,0,5.96,answered without tools
+Qwen2.5-1.5B - direct (no tools),mult-02,multi_tool,False,1,0,0,0,5.24,answered without tools
+Qwen2.5-1.5B - direct (no tools),mult-03,multi_tool,False,1,0,0,0,4.69,answered without tools
+Qwen2.5-1.5B - direct (no tools),mult-04,multi_tool,False,1,0,0,0,4.63,answered without tools
+Qwen2.5-1.5B - direct (no tools),mult-05,multi_tool,False,1,0,0,0,5.86,answered without tools
+Qwen2.5-1.5B - agent + tools,arit-01,arithmetic,True,2,1,0,0,35.16,correct
+Qwen2.5-1.5B - agent + tools,arit-02,arithmetic,True,4,2,1,0,87.06,correct
+Qwen2.5-1.5B - agent + tools,arit-03,arithmetic,False,3,2,0,0,63.6,wrong answer after tool use
+Qwen2.5-1.5B - agent + tools,arit-04,arithmetic,False,2,1,0,0,33.97,wrong answer after tool use
+Qwen2.5-1.5B - agent + tools,arit-05,arithmetic,False,2,0,1,0,76.84,invalid tool-call format
+Qwen2.5-1.5B - agent + tools,arit-06,arithmetic,False,6,2,4,0,120.75,ran out of steps
+Qwen2.5-1.5B - agent + tools,sql-01,sql,True,2,1,0,0,40.32,correct
+Qwen2.5-1.5B - agent + tools,sql-02,sql,True,2,1,0,0,35.8,correct
+Qwen2.5-1.5B - agent + tools,sql-03,sql,True,2,1,0,0,37.31,correct
+Qwen2.5-1.5B - agent + tools,sql-04,sql,True,2,1,0,0,35.83,correct
+Qwen2.5-1.5B - agent + tools,sql-05,sql,True,2,1,0,0,37.87,correct
+Qwen2.5-1.5B - agent + tools,sql-06,sql,True,3,2,0,1,108.19,correct
+Qwen2.5-1.5B - agent + tools,sql-07,sql,True,2,1,0,0,50.29,correct
+Qwen2.5-1.5B - agent + tools,sql-08,sql,True,2,1,0,0,41.93,correct
+Qwen2.5-1.5B - agent + tools,unit-01,units,True,4,2,1,0,122.06,correct
+Qwen2.5-1.5B - agent + tools,unit-02,units,False,6,3,3,0,124.23,ran out of steps
+Qwen2.5-1.5B - agent + tools,unit-03,units,True,2,1,0,0,40.13,correct
+Qwen2.5-1.5B - agent + tools,unit-04,units,True,2,1,0,0,38.05,correct
+Qwen2.5-1.5B - agent + tools,unit-05,units,False,2,1,0,1,50.74,tool error not recovered
+Qwen2.5-1.5B - agent + tools,unit-06,units,True,2,1,0,0,41.8,correct
+Qwen2.5-1.5B - agent + tools,poli-01,policy,False,2,1,0,0,49.79,wrong answer after tool use
+Qwen2.5-1.5B - agent + tools,poli-02,policy,True,2,1,0,0,32.07,correct
+Qwen2.5-1.5B - agent + tools,poli-03,policy,False,6,6,0,4,218.87,ran out of steps
+Qwen2.5-1.5B - agent + tools,poli-04,policy,False,2,1,0,0,34.79,wrong answer after tool use
+Qwen2.5-1.5B - agent + tools,poli-05,policy,False,3,2,0,1,81.89,tool error not recovered
+Qwen2.5-1.5B - agent + tools,mult-01,multi_tool,False,4,3,0,1,131.69,tool error not recovered
+Qwen2.5-1.5B - agent + tools,mult-02,multi_tool,False,3,2,0,1,94.07,tool error not recovered
+Qwen2.5-1.5B - agent + tools,mult-03,multi_tool,False,6,6,0,3,165.6,ran out of steps
+Qwen2.5-1.5B - agent + tools,mult-04,multi_tool,False,5,3,1,2,332.12,tool error not recovered
+Qwen2.5-1.5B - agent + tools,mult-05,multi_tool,False,6,5,1,4,324.92,ran out of steps
+Qwen2.5-0.5B - agent + tools,arit-01,arithmetic,False,6,0,6,0,49.84,ran out of steps
+Qwen2.5-0.5B - agent + tools,arit-02,arithmetic,False,6,3,3,0,61.32,ran out of steps
+Qwen2.5-0.5B - agent + tools,arit-03,arithmetic,False,2,0,1,0,38.23,invalid tool-call format
+Qwen2.5-0.5B - agent + tools,arit-04,arithmetic,False,6,0,6,0,106.76,ran out of steps
+Qwen2.5-0.5B - agent + tools,arit-05,arithmetic,False,2,0,1,0,40.26,invalid tool-call format
+Qwen2.5-0.5B - agent + tools,arit-06,arithmetic,False,6,3,3,3,67.79,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-01,sql,False,6,3,3,0,53.12,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-02,sql,False,6,3,3,0,56.97,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-03,sql,False,6,3,3,0,63.61,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-04,sql,False,6,0,6,0,50.42,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-05,sql,False,6,4,2,0,87.38,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-06,sql,False,6,1,5,0,209.67,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-07,sql,False,6,3,3,3,91.27,ran out of steps
+Qwen2.5-0.5B - agent + tools,sql-08,sql,False,6,3,3,0,42.78,ran out of steps
+Qwen2.5-0.5B - agent + tools,unit-01,units,False,6,0,6,0,60.01,ran out of steps
+Qwen2.5-0.5B - agent + tools,unit-02,units,False,6,2,4,0,54.21,ran out of steps
+Qwen2.5-0.5B - agent + tools,unit-03,units,False,6,3,3,0,41.94,ran out of steps
+Qwen2.5-0.5B - agent + tools,unit-04,units,False,6,3,3,0,75.18,ran out of steps
+Qwen2.5-0.5B - agent + tools,unit-05,units,True,4,2,1,2,57.99,correct
+Qwen2.5-0.5B - agent + tools,unit-06,units,False,6,3,3,0,44.17,ran out of steps
+Qwen2.5-0.5B - agent + tools,poli-01,policy,False,6,0,6,0,57.46,ran out of steps
+Qwen2.5-0.5B - agent + tools,poli-02,policy,False,6,0,6,0,43.09,ran out of steps
+Qwen2.5-0.5B - agent + tools,poli-03,policy,False,6,0,6,0,50.49,ran out of steps
+Qwen2.5-0.5B - agent + tools,poli-04,policy,False,6,0,6,0,56.2,ran out of steps
+Qwen2.5-0.5B - agent + tools,poli-05,policy,False,6,0,6,0,46.7,ran out of steps
+Qwen2.5-0.5B - agent + tools,mult-01,multi_tool,False,3,1,1,0,40.8,wrong answer after tool use
+Qwen2.5-0.5B - agent + tools,mult-02,multi_tool,False,6,0,6,0,146.34,ran out of steps
+Qwen2.5-0.5B - agent + tools,mult-03,multi_tool,False,6,3,3,0,91.45,ran out of steps
+Qwen2.5-0.5B - agent + tools,mult-04,multi_tool,False,6,3,3,0,97.03,ran out of steps
+Qwen2.5-0.5B - agent + tools,mult-05,multi_tool,False,6,0,6,0,67.72,ran out of steps

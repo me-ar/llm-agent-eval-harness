@@ -1,0 +1,97 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<01:33,  3.61it/s]Loading weights:  40%|████      | 136/338 [00:00<00:00, 459.18it/s]Loading weights:  64%|██████▎   | 215/338 [00:00<00:00, 464.45it/s]Loading weights:  83%|████████▎ | 280/338 [00:00<00:00, 444.79it/s]Loading weights:  99%|█████████▉| 336/338 [00:00<00:00, 461.36it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 414.54it/s]
+[Qwen2.5-1.5B - direct (no tools)] arit-01  FAIL steps=1 answer='12,300,003' expected=12426253
+[Qwen2.5-1.5B - direct (no tools)] arit-02  FAIL steps=1 answer='399.97' expected=411.0
+[Qwen2.5-1.5B - direct (no tools)] arit-03  FAIL steps=1 answer='1000.00' expected=4337.96
+[Qwen2.5-1.5B - direct (no tools)] arit-04  PASS steps=1 answer='314' expected=314
+[Qwen2.5-1.5B - direct (no tools)] arit-05  FAIL steps=1 answer='$19,836.54' expected=16671.86
+[Qwen2.5-1.5B - direct (no tools)] arit-06  FAIL steps=1 answer='1,099,511,627,776' expected=137438953472
+[Qwen2.5-1.5B - direct (no tools)] sql-01   FAIL steps=1 answer="The number of orders with status 'refunded' cannot be determ" expected=35
+[Qwen2.5-1.5B - direct (no tools)] sql-02   FAIL steps=1 answer='The exact number of German-based customers is not publicly d' expected=13
+[Qwen2.5-1.5B - direct (no tools)] sql-03   FAIL steps=1 answer='The price of the most expensive product cannot be determined' expected=360.04
+[Qwen2.5-1.5B - direct (no tools)] sql-04   FAIL steps=1 answer='The number of units sold in completed orders is not specifie' expected=1059
+[Qwen2.5-1.5B - direct (no tools)] sql-05   FAIL steps=1 answer='It is impossible to determine which country has the most cus' expected=UK
+[Qwen2.5-1.5B - direct (no tools)] sql-06   FAIL steps=1 answer='$1,538,479.00' expected=18930.5
+[Qwen2.5-1.5B - direct (no tools)] sql-07   FAIL steps=1 answer='The specific product category that generated the most revenu' expected=Electronics
+[Qwen2.5-1.5B - direct (no tools)] sql-08   FAIL steps=1 answer='The number of distinct customers who placed at least one ord' expected=60
+[Qwen2.5-1.5B - direct (no tools)] unit-01  FAIL steps=1 answer='42.195 kilometers' expected=42.16
+[Qwen2.5-1.5B - direct (no tools)] unit-02  FAIL steps=1 answer='-37.5°C' expected=37.0
+[Qwen2.5-1.5B - direct (no tools)] unit-03  FAIL steps=1 answer='160.38' expected=159.84
+[Qwen2.5-1.5B - direct (no tools)] unit-04  FAIL steps=1 answer='$413.76' expected=317.5
+[Qwen2.5-1.5B - direct (no tools)] unit-05  FAIL steps=1 answer='26.418' expected=13.209
+[Qwen2.5-1.5B - direct (no tools)] unit-06  FAIL steps=1 answer='10.48' expected=10.5
+[Qwen2.5-1.5B - direct (no tools)] poli-01  FAIL steps=1 answer='30 days' expected=14
+[Qwen2.5-1.5B - direct (no tools)] poli-02  FAIL steps=1 answer='The cost of express shipping varies depending on the carrier' expected=9.99
+[Qwen2.5-1.5B - direct (no tools)] poli-03  FAIL steps=1 answer='Orders over £25 qualify for free standard UK shipping.' expected=50
+[Qwen2.5-1.5B - direct (no tools)] poli-04  FAIL steps=1 answer='The length of warranty varies depending on the product and m' expected=1 year
+[Qwen2.5-1.5B - direct (no tools)] poli-05  PASS steps=1 answer='100 loyalty points are required for a £5 voucher.' expected=100
+[Qwen2.5-1.5B - direct (no tools)] mult-01  FAIL steps=1 answer='€150,48' expected=31686.29
+[Qwen2.5-1.5B - direct (no tools)] mult-02  FAIL steps=1 answer='$14.95' expected=33.12
+[Qwen2.5-1.5B - direct (no tools)] mult-03  FAIL steps=1 answer='35.41%' expected=7.0
+[Qwen2.5-1.5B - direct (no tools)] mult-04  FAIL steps=1 answer='20' expected=1440
+[Qwen2.5-1.5B - direct (no tools)] mult-05  FAIL steps=1 answer='£150.48' expected=1656.86
+[Qwen2.5-1.5B - agent + tools] arit-01  PASS steps=2 answer='12,426,253 GBP' expected=12426253
+[Qwen2.5-1.5B - agent + tools] arit-02  PASS steps=4 answer='411.00' expected=411.0
+[Qwen2.5-1.5B - agent + tools] arit-03  FAIL steps=3 answer='5509.21' expected=4337.96
+[Qwen2.5-1.5B - agent + tools] arit-04  FAIL steps=2 answer='The square root of 98,596 cannot be directly calculated here' expected=314
+[Qwen2.5-1.5B - agent + tools] arit-05  FAIL steps=2 answer='The future value of the loan after 7 years would be approxim' expected=16671.86
+[Qwen2.5-1.5B - agent + tools] arit-06  FAIL steps=6 answer='None' expected=137438953472
+[Qwen2.5-1.5B - agent + tools] sql-01   PASS steps=2 answer="There are 35 orders in the shop database with status 'refund" expected=35
+[Qwen2.5-1.5B - agent + tools] sql-02   PASS steps=2 answer='There are 13 customers based in Germany.' expected=13
+[Qwen2.5-1.5B - agent + tools] sql-03   PASS steps=2 answer='The price of the most expensive product is 360.04 GBP.' expected=360.04
+[Qwen2.5-1.5B - agent + tools] sql-04   PASS steps=2 answer='1059' expected=1059
+[Qwen2.5-1.5B - agent + tools] sql-05   PASS steps=2 answer='UK' expected=UK
+[Qwen2.5-1.5B - agent + tools] sql-06   PASS steps=3 answer='£18,930.50' expected=18930.5
+[Qwen2.5-1.5B - agent + tools] sql-07   PASS steps=2 answer='Electronics' expected=Electronics
+[Qwen2.5-1.5B - agent + tools] sql-08   PASS steps=2 answer='There are 60 distinct customers who placed at least one orde' expected=60
+[Qwen2.5-1.5B - agent + tools] unit-01  PASS steps=4 answer='A marathon of 26.2 miles is approximately 42.1648 kilometers' expected=42.16
+[Qwen2.5-1.5B - agent + tools] unit-02  FAIL steps=6 answer='None' expected=37.0
+[Qwen2.5-1.5B - agent + tools] unit-03  PASS steps=2 answer='159.84 lb' expected=159.84
+[Qwen2.5-1.5B - agent + tools] unit-04  PASS steps=2 answer='250 GBP is approximately 317.5 USD.' expected=317.5
+[Qwen2.5-1.5B - agent + tools] unit-05  FAIL steps=2 answer='13.29' expected=13.209
+[Qwen2.5-1.5B - agent + tools] unit-06  PASS steps=2 answer='10.50' expected=10.5
+[Qwen2.5-1.5B - agent + tools] poli-01  FAIL steps=2 answer='There is insufficient information to determine the number of' expected=14
+[Qwen2.5-1.5B - agent + tools] poli-02  PASS steps=2 answer='Express shipping costs £9.99.' expected=9.99
+[Qwen2.5-1.5B - agent + tools] poli-03  FAIL steps=6 answer='None' expected=50
+[Qwen2.5-1.5B - agent + tools] poli-04  FAIL steps=2 answer='There is no specific information provided about the warranty' expected=1 year
+[Qwen2.5-1.5B - agent + tools] poli-05  FAIL steps=3 answer='500' expected=100
+[Qwen2.5-1.5B - agent + tools] mult-01  FAIL steps=4 answer='1580.82' expected=31686.29
+[Qwen2.5-1.5B - agent + tools] mult-02  FAIL steps=3 answer='$26.08' expected=33.12
+[Qwen2.5-1.5B - agent + tools] mult-03  FAIL steps=6 answer='None' expected=7.0
+[Qwen2.5-1.5B - agent + tools] mult-04  FAIL steps=5 answer='The single largest completed order earned 186 loyalty points' expected=1440
+[Qwen2.5-1.5B - agent + tools] mult-05  FAIL steps=6 answer='None' expected=1656.86
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:58,  4.96it/s]Loading weights:  84%|████████▍ | 243/290 [00:00<00:00, 955.97it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 771.12it/s]
+[Qwen2.5-0.5B - agent + tools] arit-01  FAIL steps=6 answer='None' expected=12426253
+[Qwen2.5-0.5B - agent + tools] arit-02  FAIL steps=6 answer='None' expected=411.0
+[Qwen2.5-0.5B - agent + tools] arit-03  FAIL steps=2 answer='The revenue after rounding to two decimal places is £4340.15' expected=4337.96
+[Qwen2.5-0.5B - agent + tools] arit-04  FAIL steps=6 answer='None' expected=314
+[Qwen2.5-0.5B - agent + tools] arit-05  FAIL steps=2 answer='$16,922.50' expected=16671.86
+[Qwen2.5-0.5B - agent + tools] arit-06  FAIL steps=6 answer='None' expected=137438953472
+[Qwen2.5-0.5B - agent + tools] sql-01   FAIL steps=6 answer='None' expected=35
+[Qwen2.5-0.5B - agent + tools] sql-02   FAIL steps=6 answer='None' expected=13
+[Qwen2.5-0.5B - agent + tools] sql-03   FAIL steps=6 answer='None' expected=360.04
+[Qwen2.5-0.5B - agent + tools] sql-04   FAIL steps=6 answer='None' expected=1059
+[Qwen2.5-0.5B - agent + tools] sql-05   FAIL steps=6 answer='None' expected=UK
+[Qwen2.5-0.5B - agent + tools] sql-06   FAIL steps=6 answer='None' expected=18930.5
+[Qwen2.5-0.5B - agent + tools] sql-07   FAIL steps=6 answer='None' expected=Electronics
+[Qwen2.5-0.5B - agent + tools] sql-08   FAIL steps=6 answer='None' expected=60
+[Qwen2.5-0.5B - agent + tools] unit-01  FAIL steps=6 answer='None' expected=42.16
+[Qwen2.5-0.5B - agent + tools] unit-02  FAIL steps=6 answer='None' expected=37.0
+[Qwen2.5-0.5B - agent + tools] unit-03  FAIL steps=6 answer='None' expected=159.84
+[Qwen2.5-0.5B - agent + tools] unit-04  FAIL steps=6 answer='None' expected=317.5
+[Qwen2.5-0.5B - agent + tools] unit-05  PASS steps=4 answer='13.209' expected=13.209
+[Qwen2.5-0.5B - agent + tools] unit-06  FAIL steps=6 answer='None' expected=10.5
+[Qwen2.5-0.5B - agent + tools] poli-01  FAIL steps=6 answer='None' expected=14
+[Qwen2.5-0.5B - agent + tools] poli-02  FAIL steps=6 answer='None' expected=9.99
+[Qwen2.5-0.5B - agent + tools] poli-03  FAIL steps=6 answer='None' expected=50
+[Qwen2.5-0.5B - agent + tools] poli-04  FAIL steps=6 answer='None' expected=1 year
+[Qwen2.5-0.5B - agent + tools] poli-05  FAIL steps=6 answer='None' expected=100
+[Qwen2.5-0.5B - agent + tools] mult-01  FAIL steps=3 answer='$27082.30' expected=31686.29
+[Qwen2.5-0.5B - agent + tools] mult-02  FAIL steps=6 answer='None' expected=33.12
+[Qwen2.5-0.5B - agent + tools] mult-03  FAIL steps=6 answer='None' expected=7.0
+[Qwen2.5-0.5B - agent + tools] mult-04  FAIL steps=6 answer='None' expected=1440
+[Qwen2.5-0.5B - agent + tools] mult-05  FAIL steps=6 answer='None' expected=1656.86
+                          config  accuracy  avg_steps  avg_tool_calls  invalid_reply_rate  tool_error_rate  avg_seconds_per_task  acc_arithmetic  acc_sql  acc_units  acc_policy  acc_multi_tool
+Qwen2.5-1.5B - direct (no tools)     0.067       1.00            0.00               0.000            0.000                   7.2           0.167      0.0      0.000         0.2             0.0
+    Qwen2.5-1.5B - agent + tools     0.500       3.10            1.87               0.129            0.321                  89.6           0.333      1.0      0.667         0.2             0.0
+    Qwen2.5-0.5B - agent + tools     0.033       5.57            1.53               0.701            0.174                  68.3           0.000      0.0      0.167         0.0             0.0

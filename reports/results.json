@@ -1,0 +1,80 @@
+{
+  "n_tasks": 30,
+  "categories": {
+    "arithmetic": 6,
+    "sql": 8,
+    "units": 6,
+    "policy": 5,
+    "multi_tool": 5
+  },
+  "summary": [
+    {
+      "config": "Qwen2.5-1.5B - direct (no tools)",
+      "accuracy": 0.067,
+      "avg_steps": 1.0,
+      "avg_tool_calls": 0.0,
+      "invalid_reply_rate": 0.0,
+      "tool_error_rate": 0.0,
+      "avg_seconds_per_task": 7.2,
+      "acc_arithmetic": 0.167,
+      "acc_sql": 0.0,
+      "acc_units": 0.0,
+      "acc_policy": 0.2,
+      "acc_multi_tool": 0.0
+    },
+    {
+      "config": "Qwen2.5-1.5B - agent + tools",
+      "accuracy": 0.5,
+      "avg_steps": 3.1,
+      "avg_tool_calls": 1.87,
+      "invalid_reply_rate": 0.129,
+      "tool_error_rate": 0.321,
+      "avg_seconds_per_task": 89.6,
+      "acc_arithmetic": 0.333,
+      "acc_sql": 1.0,
+      "acc_units": 0.667,
+      "acc_policy": 0.2,
+      "acc_multi_tool": 0.0
+    },
+    {
+      "config": "Qwen2.5-0.5B - agent + tools",
+      "accuracy": 0.033,
+      "avg_steps": 5.57,
+      "avg_tool_calls": 1.53,
+      "invalid_reply_rate": 0.701,
+      "tool_error_rate": 0.174,
+      "avg_seconds_per_task": 68.3,
+      "acc_arithmetic": 0.0,
+      "acc_sql": 0.0,
+      "acc_units": 0.167,
+      "acc_policy": 0.0,
+      "acc_multi_tool": 0.0
+    }
+  ],
+  "failures": {
+    "Qwen2.5-0.5B - agent + tools": {
+      "answered without tools": 0,
+      "correct": 1,
+      "invalid tool-call format": 2,
+      "ran out of steps": 26,
+      "tool error not recovered": 0,
+      "wrong answer after tool use": 1
+    },
+    "Qwen2.5-1.5B - agent + tools": {
+      "answered without tools": 0,
+      "correct": 15,
+      "invalid tool-call format": 1,
+      "ran out of steps": 5,
+      "tool error not recovered": 5,
+      "wrong answer after tool use": 4
+    },
+    "Qwen2.5-1.5B - direct (no tools)": {
+      "answered without tools": 28,
+      "correct": 2,
+      "invalid tool-call format": 0,
+      "ran out of steps": 0,
+      "tool error not recovered": 0,
+      "wrong answer after tool use": 0
+    }
+  }
+}
